@@ -1,5 +1,5 @@
 //create a default value for params to be passed in
-
+<?php
 function doStuff($name, $age = 25)
 {
   echo $name;
@@ -31,6 +31,7 @@ subStr($aString, 0, 15);
 
 strsplit($aString, 5);
 //what you are splitting then by how many characters you wish to split the string
+?>
 
 print_r($arrayVariable);
 //prints out arrays
