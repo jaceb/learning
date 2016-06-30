@@ -54,9 +54,32 @@ $myObject->setFirstName("Sam");
 
  }
 
+//using protected as the keyword instead of public.  these properties can only be accessed
+//through a public method in that class
 
 
+//private can only be accessed by the class it was declared in
 
+//static properties must be self contained, can't rely on other non-static methods
+//with static porperties you do use the $
+public static function practiceStaticFunction()
+{
+  return self::$propertyNameifStatic;
+}
+
+echo Author::practiceStaticFunction();
+
+//
+
+include "fileName.php";
+//includes that file in this file
+
+include_once "otherFileName.php";
+//
+
+require "aFileName.php";
+//require won't execute if the file isn't found.  Include will execute but it
+//will also throw an error
 
 
 
